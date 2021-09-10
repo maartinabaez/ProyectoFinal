@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding: 0;
+   }
+
+.padre{
+     display: flex;
+     flex-flow: column nowrap;
+   }
+
+.header{
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;
+   }
+
+.menu{
+    background-color:white;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.logo{
+    flex: 1 1 auto;
+    padding-left: 10px
+    }
+      
+ .nav{
+     flex: 5 1 auto;
+     
+     
+    }
+
+.nav a{
+    height: 50px;
+    font-family:'Architects Daughter', cursive; 
+    font-size: 20px;
+    text-decoration: none;
+    color:#B05B3B;
+    padding: 0 10px;
+    letter-spacing: 2px;
+
+    }
+
+  
+
+.principal{
+    background: #FFEBC9;
+    height: 150px;
+}
+ 
+h1{
+    color: #B05B3B;
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+h2{
+    color: #D79771;
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+    text-align: center;
+    
+}
+.main{
+    background-image: url(../images/picadaBg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 900px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.img{
+    height: 400px;
+    max-width: 100%;
+}
+
+.footer{
+    background: #753422;
+    height: 150px;
+    width: 100%;
+    
+}
+
+.logo{
+    height: auto;
+    max-width: 100%;
+}
+
+.SobreNos{
+     color: #753422;
+        font-family:'Architects Daughter', cursive; 
+        font-size: 40px;
+        text-decoration: none;
+        text-align: center;
+        padding: 40px;
+}
+.enlaces{
+    list-style: none;
+     color: violet;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    width: 18%;
+    }
+
+    .footerLine{
+        color: black;
+        font-family:'Architects Daughter', cursive; 
+        font-size: 25px;
+        text-decoration: none;
+        text-align: center;
+        padding: 20px;
+    }
+    .footerContact{
+        color: black;
+        font-family:'Architects Daughter', cursive; 
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+    }    
+
+    span{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+.Index{
+    background-image: url(../images/picadaBg.jpg);
+    background-size: cover;
+    height: 900px;
+}
+
+
+.tabla{
+    margin: 100px auto;
+    width: 600px;
+  }
+  
+  table{
+      background-color: #fbe083;
+      text-align: left;
+      width:100%;
+      border-collapse: collapse;
+  }
+  
+  tr td{
+      border: solid 1px black;
+      padding:20px;
+      font-family:  'Architects Daughter', cursive; 
+      color: rgb(92, 3, 3)
+  }
+  
+  th{
+      background-color: tomato;
+      border-bottom: solid 5px #50232e ;
+      color: rgb(253, 252, 252);
+      font-family: 'Architects Daughter', cursive; 
+      text-align: center;
+  }
+  ol li{
+    font-family:'Architects Daughter', cursive; 
+    font-size: 30px;
+ 
+   
+    
+}
+
+ul li{
+    font-family:'Architects Daughter', cursive; 
+    font-size: 20px;
+   
+}
+
+div aside ol{
+    text-align: right;
+}
+
+
+
+fieldset legend{
+    color: rgb(8, 2, 1);
+    width: 20px;
+}
+
+fieldset{
+    color: rgb(100, 14, 212);
+    width: 170px;
+    height : 340px;
+    margin : 0 auto;
+  
+}
+
+input{
+    border: 1px dotted #999;
+    border-radius: 0;
+}
+
+textarea {
+    vertical-align: top;
+    background-color:#f9b966;
+}
+  form {
+    position: relative;
+    width: 260px;
+    height : 359px;
+    margin : 0 auto;
+    
+  
+    background:  #ce5f2d;
+  }
