@@ -139,6 +139,11 @@ h2{
     height: 900px;
 }
 
+.nosotros{
+    background-image: url(../images/picadaBg.jpg);
+    background-size: cover;
+    height: 1500px;
+}
 
 .tabla{
     margin: 100px auto;
@@ -194,7 +199,7 @@ fieldset legend{
 fieldset{
     color: rgb(100, 14, 212);
     width: 170px;
-    height : 340px;
+    height : 700px;
     margin : 0 auto;
   
 }
@@ -211,9 +216,7 @@ textarea {
   form {
     position: relative;
     width: 260px;
-    height : 359px;
+    height : 670px;
     margin : 0 auto;
-    
-  
     background:  #ce5f2d;
   }
