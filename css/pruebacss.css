@@ -32,7 +32,7 @@ div {
       div header div h1 {
         width: 100%;
         color: #B05B3B;
-        font-family: 'Indie Flower', cursive;
+        font-family: "Indie Flower", cursive;
         font-size: 50px;
         text-align: center;
         padding-top: 15px;
@@ -47,8 +47,8 @@ div {
     opacity: 1; } }
       div header div h2 {
         width: 100%;
-        color: #D79771;
-        font-family: 'Indie Flower', cursive;
+        color: D79771;
+        font-family: "Indie Flower", cursive;
         font-size: 40px;
         text-align: center; }
 
