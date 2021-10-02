@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+div {
+  display: flex;
+  flex-flow: column nowrap; }
+  div header {
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap; }
+    div header div {
+      background-color: white;
+      display: flex;
+      flex-flow: row nowrap;
+      height: 90px;
+      align-items: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+      div header div div {
+        flex: 1 1 auto;
+        padding-left: 10px; }
+      div header div nav a {
+        height: 50px;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 0 10px;
+        letter-spacing: 2px; }
+    div header div {
+      background: #FFEBC9;
+      height: 150px; }
+      div header div h1 {
+        width: 100%;
+        color: #B05B3B;
+        font-family: 'Indie Flower', cursive;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 15px;
+        animation-name: aparecer;
+        animation-duration: 2s;
+        animation-iteration-count: 2; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+      div header div h2 {
+        width: 100%;
+        color: #D79771;
+        font-family: 'Indie Flower', cursive;
+        font-size: 40px;
+        text-align: center; }
+
+main {
+  background-image: url(../images/picadaBg.jpg);
+  background-size: cover;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 900px;
+  align-items: center;
+  justify-content: space-around; }
+
+#footer {
+  background: #753422;
+  height: 200px; }
+
+footer p {
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px; }
+
+footer span {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  footer span p {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    display: block; }
+  footer span a {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    display: block; }
