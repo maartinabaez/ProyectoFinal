@@ -1,0 +1,282 @@
+*{
+    margin:0;
+    padding: 0;
+   }
+
+.padre{
+     display: flex;
+     flex-flow: column nowrap;
+   }
+
+.header{
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;
+   }
+
+.menu{
+    background-color:white;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.logo{
+    flex: 1 1 auto;
+    padding-left: 10px
+    }
+      
+ .nav{
+     flex: 5 1 auto;
+     
+     
+    }
+
+.nav a{
+    height: 50px;
+    font-family:'Architects Daughter', cursive; 
+    font-size: 20px;
+    text-decoration: none;
+    color:#B05B3B;
+    padding: 0 10px;
+    letter-spacing: 2px;
+
+    }
+
+  
+
+.principal{
+    background: #FFEBC9;
+    height: 150px;
+}
+ 
+h1{
+    color: #B05B3B;
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 15px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+  }
+
+
+}
+
+h2{
+    color: #D79771;
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+    text-align: center;
+    
+}
+.main{
+    background-image: url(../images/picadaBg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 900px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.img{
+    height: 400px;
+    max-width: 100%;
+}
+
+#footer{
+    background: #753422;
+    height: 150px;
+    
+    
+}
+
+.logo{
+    height: auto;
+    max-width: 100%;
+}
+
+.SobreNos{
+     color: #753422;
+        font-family: 'Raleway', sans-serif;; 
+        font-size: 25px;
+        text-decoration: none;
+        text-align: center;
+        padding: 40px;
+}
+.enlaces{
+    list-style: none;
+     color: violet;
+     font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    width: 18%;
+    }
+
+    .footerLine{
+        color: black;
+        font-family:'Raleway', sans-serif;
+        font-size: 25px;
+        text-decoration: none;
+        text-align: center;
+        padding: 20px;
+    }
+    .footerContact{
+        color: black;
+        font-family:'Raleway', sans-serif; 
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+    }    
+
+    span{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+.Index{
+    background-image: url(../images/picadaBg.jpg);
+    background-size: cover;
+    height: 900px;
+}
+
+.nosotros{
+    background-image: url(../images/picadaBg.jpg);
+    background-size: cover;
+    height: 1500px;
+}
+
+.tabla{
+    margin: 100px auto;
+    width: 600px;
+  }
+  
+  table{
+      background-color:#fbe083;
+      text-align: left;
+      width:100%;
+      border-collapse: collapse;
+  }
+  
+  tr td{
+      border: solid 1px black;
+      padding:20px;
+      font-family: 'Raleway', sans-serif;
+      color: rgb(92, 3, 3);
+  }
+  
+  th{
+      background-color: tomato;
+      border-bottom: solid 5px #50232e ;
+      color: rgb(253, 252, 252);
+      font-family: 'Raleway', sans-serif; 
+      text-align: center;
+  }
+
+  tr td:hover{
+      transform: scale(1,1);
+      
+  }
+
+ .menuEspecial{
+     display: flex;
+     flex-wrap: wrap; 
+     flex-direction:row;
+    align-content:stretch;
+
+ } 
+
+ ol:hover{
+        transform: scale(0.8,0.8);
+        transition: height 2s, width 1s;
+
+        }
+
+
+  ol li{
+    font-family:'Raleway', sans-serif; 
+    font-size: 30px; 
+}
+
+ul li{
+    font-family:'Raleway', sans-serif; 
+    font-size: 20px;
+   
+}
+
+ol{
+    list-style-type: none;
+}
+
+form{
+    width: 450px;
+  margin: auto;
+  background: rgba(0,0,0,0.4);
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+  }
+
+  legend{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+  }
+
+  input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    }
+
+    textarea{
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+        }
+
+ #boton{
+   background: #31384A;
+  color: #fff;
+ padding: 20px;
+ 
+            }
+            
+     #boton:hover {
+         cursor: pointer;
+               }
+
+@media (max-width: 480px) {
+       form{
+          width: 100%;
+          }
+     }
+
+input{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+}
