@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Raleway&display=swap" rel="stylesheet">
     <title>Contacto</title>
 </head>
 <body>
@@ -60,15 +62,15 @@
         <fieldset>
             <legend>Tus datos</legend>
         
-            <label for="nombre">Nombre</label>
+            <label for="nombre"></label>
             <input type="text" placeholder="Nombre" id="nombre">
             <br>
             
-            <label for="apellido">Apellido</label>
+            <label for="apellido"></label>
             <input type="text" placeholder="Apellido" id="apellido">
             <br>
             
-            <label for="email">E-mail</label>
+            <label for="email"></label>
             <input type="text" placeholder="Tu E-mail" id="email">
             <br>
             
@@ -86,10 +88,10 @@
             <br>
             
             Dejanos tu consulta o comentario
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escriba aqui su consulta o comentario"></textarea>
             <br>
-            <input type="reset">
-            <input type="submit">
+            <input type="button" value="Enviar" id="boton">
+            <input type="button" value="Restablecer" id="boton">
         
    </form>
     </main>
