@@ -10,14 +10,15 @@ div{
     display: flex;
      flex-flow: column nowrap;
      header{
-        background: #000;
-        display: flex;
-        flex-flow: column nowrap;
+        background: rgb(253, 253, 253);
+        position:sticky;
+        top: 0;
+        
              div{
                 background-color:white;
                 display: flex;
                 flex-flow: row nowrap;
-                height: 90px;
+                height: 150px;
                 align-items: center;
                 border-bottom: 1px solid rgba(0, 0, 0, .1);
                          div{
@@ -26,8 +27,7 @@ div{
                                  }
                 nav{
                     a{
-                        height: 50px;
-                        font-family:'Architects Daughter', cursive; 
+                        font-family: 'Raleway', sans-serif; 
                         font-size: 20px;
                         text-decoration: none;
                         padding: 0 10px;
@@ -35,7 +35,13 @@ div{
                     }
                 }                  
           }
-          div{
+       }
+      }
+    
+
+div{    display: flex;
+        flex-flow: column nowrap;
+     div{
             background: #FFEBC9;
             height: 150px;
 
@@ -61,25 +67,24 @@ div{
 
                 }
           }
-    }
-}
 
 main{
     background-image: url(../images/picadaBg.jpg);
     background-size: cover;
     display: flex;
     flex-flow: row nowrap;
-    height: 900px;
-    align-items: center;
+    height: 1000px;
     justify-content: space-around;
+    align-items: center;
 }
 
 #footer{
-    background: #753422;
-    height: 200px;
+    background: linear-gradient(to left,#753422, #a74e36, #cf6345 );
+    height: auto;
+    width: 100%;
 }
 
-footer{
+    footer{
      p{
         color: black;
         font-family:'Raleway', sans-serif;
@@ -89,9 +94,10 @@ footer{
         padding: 20px;
      }
         span{ display: flex;
+            justify-content: space-around;
             flex-wrap: wrap;
-            justify-content: space-between;
               p{
+                width: 100px;
                 color: black;
                 font-family:'Raleway', sans-serif; 
                 text-decoration: none;
@@ -99,6 +105,7 @@ footer{
                 display: block;
               }
                   a{
+                    width: 100px;
                     color: black;
                     font-family:'Raleway', sans-serif; 
                     text-decoration: none;
@@ -108,4 +115,4 @@ footer{
                   
         }
     }
-
+ }
