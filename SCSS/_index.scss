@@ -1,5 +1,6 @@
 @mixin  titulos( $ancho, $color, $fontfamily, $fontsize, $textalign ){
     width: $ancho;
+    height: auto;
     color: $color;
     font-family: $fontfamily;
     font-size: $fontsize;
@@ -7,8 +8,6 @@
 
 }
 div{
-    display: flex;
-     flex-flow: column nowrap;
      header{
         background: rgb(253, 253, 253);
         position:sticky;
@@ -38,13 +37,15 @@ div{
        }
       }
     
-
-div{    display: flex;
+.Estructura{
+    display: flex;
         flex-flow: column nowrap;
+}
+
+div{
      div{
             background: #FFEBC9;
-            height: 150px;
-
+            height: auto;
                 h1{
                     @include titulos( 100% ,  #B05B3B , ('Indie Flower', cursive) , 50px , center );
                     padding-top: 15px;
@@ -68,18 +69,18 @@ div{    display: flex;
                 }
           }
 
- @mixin  main($height , $display , $flexflow ){
+ @mixin  main($height , $display , $flexflow , $justify-content, $alignitems){
             background-image: url(../images/picadaBg.jpg);
             background-size: cover;
             display: $display;
             flex-flow: $flexflow;
             height: $height;
-            justify-content: space-around;
-            align-items: center;
+            justify-content: $justify-content;
+            align-items: $alignitems;
         }
 
 main{
-    @include main(900px, flex, row nowrap);
+    @include main(900px, flex, row nowrap, space-around, center);
 }
 
 #footer{

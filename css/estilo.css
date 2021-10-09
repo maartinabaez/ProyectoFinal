@@ -1,282 +1,272 @@
-*{
-    margin:0;
-    padding: 0;
-   }
+* {
+  margin: 0;
+  padding: 0; }
 
-.padre{
-     display: flex;
-     flex-flow: column nowrap;
-   }
-
-.header{
-    background: #000;
-    display: flex;
-    flex-flow: column nowrap;
-   }
-
-.menu{
-    background-color:white;
+div header {
+  background: #fdfdfd;
+  position: sticky;
+  top: 0; }
+  div header div {
+    background-color: white;
     display: flex;
     flex-flow: row nowrap;
-    height: 100px;
-    align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
-
-.logo{
-    flex: 1 1 auto;
-    padding-left: 10px
-    }
-      
- .nav{
-     flex: 5 1 auto;
-     
-     
-    }
-
-.nav a{
-    height: 50px;
-    font-family:'Architects Daughter', cursive; 
-    font-size: 20px;
-    text-decoration: none;
-    color:#B05B3B;
-    padding: 0 10px;
-    letter-spacing: 2px;
-
-    }
-
-  
-
-.principal{
-    background: #FFEBC9;
     height: 150px;
-}
- 
-h1{
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    div header div div {
+      flex: 1 1 auto;
+      padding-left: 10px; }
+    div header div nav a {
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      text-decoration: none;
+      padding: 0 10px;
+      letter-spacing: 2px; }
+
+.Estructura {
+  display: flex;
+  flex-flow: column nowrap; }
+
+div div {
+  background: #FFEBC9;
+  height: auto; }
+  div div h1 {
+    width: 100%;
+    height: auto;
     color: #B05B3B;
-    font-family: 'Indie Flower', cursive;
+    font-family: "Indie Flower", cursive;
     font-size: 50px;
     text-align: center;
     padding-top: 15px;
     animation-name: aparecer;
     animation-duration: 2s;
-    animation-iteration-count: 2;
-}
+    animation-iteration-count: 2; }
 
-@keyframes aparecer{
-    0%{
-        opacity: 0;
-    }
-
-    100%{
-        opacity: 1;
-  }
-
-
-}
-
-h2{
-    color: #D79771;
-    font-family: 'Indie Flower', cursive;
-    font-size: 40px;
-    text-align: center;
-    
-}
-.main{
-    background-image: url(../images/picadaBg.jpg);
-    background-size: cover;
-    display: flex;
-    flex-flow: row nowrap;
-    height: 900px;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-.img{
-    height: 400px;
-    max-width: 100%;
-}
-
-#footer{
-    background: #753422;
-    height: 150px;
-    
-    
-}
-
-.logo{
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  div div h2 {
+    width: 100%;
     height: auto;
-    max-width: 100%;
-}
+    color: D79771;
+    font-family: "Indie Flower", cursive;
+    font-size: 40px;
+    text-align: center; }
 
-.SobreNos{
-     color: #753422;
-        font-family: 'Raleway', sans-serif;; 
-        font-size: 25px;
-        text-decoration: none;
-        text-align: center;
-        padding: 40px;
-}
-.enlaces{
-    list-style: none;
-     color: violet;
-     font-family: 'Raleway', sans-serif;
-    display: inline-block;
-    width: 18%;
-    }
+div main {
+  background-image: url(../images/picadaBg.jpg);
+  background-size: cover;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 900px;
+  justify-content: space-around;
+  align-items: center; }
 
-    .footerLine{
-        color: black;
-        font-family:'Raleway', sans-serif;
-        font-size: 25px;
-        text-decoration: none;
-        text-align: center;
-        padding: 20px;
-    }
-    .footerContact{
-        color: black;
-        font-family:'Raleway', sans-serif; 
-        text-decoration: none;
-        font-size: 25px;
-        display: block;
-    }    
+div #footer {
+  background: linear-gradient(to left, #753422, #a74e36, #cf6345);
+  height: auto;
+  width: 100%; }
 
-    span{
-     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    }
+div footer p {
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px; }
 
-.Index{
-    background-image: url(../images/picadaBg.jpg);
-    background-size: cover;
-    height: 900px;
-}
+div footer span {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  div footer span p {
+    width: 100px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    display: block; }
+  div footer span a {
+    width: 100px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    display: block; }
 
-.nosotros{
-    background-image: url(../images/picadaBg.jpg);
-    background-size: cover;
-    height: 1500px;
-}
+main {
+  background-image: url(../images/picadaBg.jpg);
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center; }
 
-.tabla{
-    margin: 100px auto;
-    width: 600px;
-  }
-  
-  table{
-      background-color:#fbe083;
-      text-align: left;
-      width:100%;
-      border-collapse: collapse;
-  }
-  
-  tr td{
-      border: solid 1px black;
-      padding:20px;
+.container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  border: solid white 1px;
+  width: 300px; }
+
+.columnaUno,
+.columnaDos,
+.columnaTres,
+.columnaCuatro,
+.columnaCinco,
+.columnaSeis,
+.columnaSiete {
+  width: 350px;
+  height: 310px;
+  border: solid #b64a4a 1px;
+  border-radius: 3;
+  margin: 10px;
+  color: black; }
+
+ol {
+  list-style-type: none; }
+  ol li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px; }
+    ol li ul li {
       font-family: 'Raleway', sans-serif;
-      color: rgb(92, 3, 3);
-  }
-  
-  th{
-      background-color: tomato;
-      border-bottom: solid 5px #50232e ;
-      color: rgb(253, 252, 252);
-      font-family: 'Raleway', sans-serif; 
-      text-align: center;
-  }
+      font-size: 15px; }
 
-  tr td:hover{
-      transform: scale(1,1);
-      
-  }
+ol:hover {
+  transform: scale(0.8, 0.8);
+  transition: height 2s, width 1s; }
 
- .menuEspecial{
-     display: flex;
-     flex-wrap: wrap; 
-     flex-direction:row;
-    align-content:stretch;
+@media (min-width: 600px) {
+  section {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    flex: 1; } }
 
- } 
+main {
+  background-image: url(../images/picadaBg.jpg);
+  background-size: cover;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 900px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%; }
 
- ol:hover{
-        transform: scale(0.8,0.8);
-        transition: height 2s, width 1s;
+table {
+  margin: 100px auto;
+  width: 600px;
+  background-color: #fbe083;
+  text-align: left;
+  width: 600px;
+  border-collapse: collapse; }
+  table tr td {
+    border: solid 1px black;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #5c0303; }
 
-        }
+tr td:hover {
+  transform: scale(1, 1); }
 
+th {
+  background-color: tomato;
+  border-bottom: solid 5px #50232e;
+  color: #fdfcfc;
+  font-family: 'Raleway', sans-serif;
+  text-align: center; }
 
-  ol li{
-    font-family:'Raleway', sans-serif; 
-    font-size: 30px; 
-}
+main {
+  background-image: url(../images/picadaBg.jpg);
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
 
-ul li{
-    font-family:'Raleway', sans-serif; 
-    font-size: 20px;
-   
-}
+.Nosotros {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  border: solid white 1px;
+  width: 600px; }
 
-ol{
-    list-style-type: none;
-}
+p {
+  color: #753422;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  padding: 40px; }
 
-form{
-    width: 450px;
+main {
+  background-image: url(../images/picadaBg.jpg);
+  background-size: cover;
+  display: flex;
+  flex-flow: row nowrap;
+  height: auto;
+  justify-content: space-around;
+  align-items: center; }
+
+form {
+  width: 450px;
   margin: auto;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
   margin-top: 20px;
-  border-radius: 7px;
-  }
-
-  legend{
+  border-radius: 7px; }
+  form legend {
     color: #fff;
     text-align: center;
     margin: 0;
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
-    margin-bottom: 20px;
-  }
+    margin-bottom: 20px; }
 
-  input, textarea{
+label {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif; }
+
+input {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 20px; }
+  input textarea {
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
     box-sizing: border-box;
     font-size: 17px;
-    border: none;
-    }
+    border: none; }
 
-    textarea{
-        min-height: 100px;
-        max-height: 200px;
-        max-width: 100%;
-        }
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%; }
 
- #boton{
-   background: #31384A;
+#boton {
+  background: #31384A;
   color: #fff;
- padding: 20px;
- 
-            }
-            
-     #boton:hover {
-         cursor: pointer;
-               }
+  padding: 20px; }
+
+#boton:hover {
+  cursor: pointer; }
 
 @media (max-width: 480px) {
-       form{
-          width: 100%;
-          }
-     }
-
-input{
-    color: #fff;
-    text-align: center;
-    margin: 0;
-    font-size: 30px;
-    font-family: 'Raleway', sans-serif;
-    margin-bottom: 20px;
-}
+  form {
+    width: 100%; } }
