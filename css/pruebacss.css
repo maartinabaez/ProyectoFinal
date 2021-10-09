@@ -59,7 +59,7 @@ div {
     background-size: cover;
     display: flex;
     flex-flow: row nowrap;
-    height: 1000px;
+    height: 900px;
     justify-content: space-around;
     align-items: center; }
   div #footer {
@@ -91,3 +91,51 @@ div {
       text-decoration: none;
       font-size: 25px;
       display: block; }
+
+main {
+  background-image: url(../images/picadaBg.jpg);
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 900px;
+  justify-content: space-around;
+  align-items: center; }
+  main h1 {
+    width: 100%;
+    color: #B05B3B;
+    font-family: "Indie Flower", cursive;
+    font-size: 50px;
+    text-align: center;
+    height: 100px; }
+    main h1 div ol {
+      list-style-type: none; }
+      main h1 div ol li {
+        font-family: 'Raleway', sans-serif;
+        font-size: 30px; }
+        main h1 div ol li ul li {
+          font-family: 'Raleway', sans-serif;
+          font-size: 20px; }
+      main h1 div ol ol:hover {
+        transform: scale(0.8, 0.8);
+        transition: height 2s, width 1s; }
+
+.menuUno {
+  grid-area: menuUno; }
+
+.menuDos {
+  grid-area: menuDos; }
+
+.menuTres {
+  grid-area: menuTres; }
+
+.menuCuatro {
+  grid-area: menuCuatro; }
+
+.menuCinco {
+  grid-area: menuCinco; }
+
+.menuSeis {
+  grid-area: menuSeis; }
+
+.menuSiete {
+  grid-area: menuSiete; }
