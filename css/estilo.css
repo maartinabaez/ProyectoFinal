@@ -80,6 +80,7 @@ div footer p {
 div footer span {
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
   flex-wrap: wrap; }
   div footer span p {
     width: 100px;
