@@ -80,7 +80,7 @@ div{
         }
 
 main{
-    @include main(900px, flex, row nowrap, space-around, center);
+    @include main(900px, flex, row wrap, space-around, center);
 }
 
 #footer{
@@ -122,3 +122,13 @@ main{
         }
     }
  }
+
+ @media (max-width: 480px) {
+    main div div h5{
+        font-size: smaller;
+    }
+
+    main div div p{
+        font-size: smaller;
+    }
+}

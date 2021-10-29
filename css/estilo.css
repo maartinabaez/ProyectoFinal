@@ -59,7 +59,7 @@ div main {
   background-image: url(../images/picadaBg.jpg);
   background-size: cover;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   height: 900px;
   justify-content: space-around;
   align-items: center; }
@@ -96,6 +96,12 @@ div footer span {
     text-decoration: none;
     font-size: 25px;
     display: block; }
+
+@media (max-width: 480px) {
+  main div div h5 {
+    font-size: smaller; }
+  main div div p {
+    font-size: smaller; } }
 
 main {
   background-image: url(../images/picadaBg.jpg);
