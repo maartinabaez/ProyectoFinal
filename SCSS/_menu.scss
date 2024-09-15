@@ -1,0 +1,68 @@
+@mixin  main($height , $display , $flexflow , $justify-content , $alignitems){
+    background-image: url(../images/picadaBg.jpg);
+    background-size: cover;
+    display: $display;
+    flex-flow: $flexflow;
+    height: $height;
+    width:100%;
+    justify-content: $justify-content;
+    align-items: $alignitems;
+}
+
+main{
+    @include main(auto, flex, row wrap, flex-start, center);
+    }
+
+.container{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    border: solid white 1px;
+    width: 300px;
+}
+
+.columnaUno, 
+.columnaDos, 
+.columnaTres, 
+.columnaCuatro,
+.columnaCinco,
+.columnaSeis,
+.columnaSiete {
+  width: 350px;
+  height: 310px;
+  border: solid rgb(182, 74, 74) 1px;
+  border-radius: 3;
+  margin: 10px;
+  color: black; 
+}
+
+ ol{
+    list-style-type: none;
+        li{
+            font-family:'Raleway', sans-serif; 
+            font-size: 35px;
+             ul {
+                   li{
+                    font-family:'Raleway', sans-serif; 
+                    font-size: 15px;
+                    
+                }
+            }
+        }
+    }
+
+ol:hover{
+    transform: scale(0.8,0.8);
+    transition: height 2s, width 1s;
+}
+
+@media (min-width: 600px) {
+    section{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      flex:1;
+    }
+  }

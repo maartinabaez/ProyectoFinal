@@ -1,0 +1,78 @@
+@mixin  main($height , $display , $flexflow , $justify-content, $alignitems){
+    background-image: url(../images/picadaBg.jpg);
+    background-size: cover;
+    display: $display;
+    flex-flow: $flexflow;
+    height: $height;
+    justify-content: $justify-content;
+    align-items: $alignitems;
+}
+
+main{
+@include main(auto, flex, row nowrap, space-around, center);
+}
+
+form{
+  width: 450px;
+  margin: auto;
+  background: rgba(0,0,0,0.4);
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+        legend{
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            font-size: 30px;
+            font-family: 'Raleway', sans-serif;
+            margin-bottom: 20px;
+               
+        }
+  }
+
+label{
+    color: #fff;
+     text-align: center;
+     margin: 0;
+     font-size: 30px;
+     font-family: 'Raleway', sans-serif;
+}
+ input{
+     color: #fff;
+     text-align: center;
+     margin: 0;
+     font-size: 30px;
+     font-family: 'Raleway', sans-serif;
+     margin-bottom: 20px;
+                 textarea{
+                        width: 100%;
+                        margin-bottom: 20px;
+                        padding: 7px;
+                        box-sizing: border-box;
+                        font-size: 17px;
+                        border: none;
+                            }
+                            }
+
+    textarea{
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+        }
+
+ #boton{
+        background: #31384A;
+        color: #fff;
+        padding: 20px;
+         }
+                     
+#boton:hover {
+            cursor: pointer;
+             }
+
+
+ @media (max-width: 480px) {
+        form{
+           width: 100%;
+           }
+      }

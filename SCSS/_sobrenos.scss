@@ -1,0 +1,36 @@
+@mixin  main($height , $display , $flexflow , $justify-content, $alignitems){
+    background-image: url(../images/picadaBg.jpg);
+    background-size: cover;
+    display: $display;
+    flex-flow: $flexflow;
+    height: $height;
+    justify-content: $justify-content;
+    align-items: $alignitems;
+}
+
+main{
+@include main(auto, flex, column wrap, center, center);
+         width:100%;
+}
+
+.Nosotros{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        border: solid white 1px;
+        width: 600px;
+    }
+
+
+
+p{
+        color: #753422;
+        font-family: 'Raleway', sans-serif;; 
+        font-size: 25px;
+        text-decoration: none;
+        text-align: center;
+        padding: 40px;
+}
+
+

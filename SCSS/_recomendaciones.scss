@@ -1,0 +1,43 @@
+@mixin  main($height , $display , $flexflow , $justify-content, $alignitems){
+    background-image: url(../images/picadaBg.jpg);
+    background-size: cover;
+    display: $display;
+    flex-flow: $flexflow;
+    height: $height;
+    justify-content: $justify-content;
+    align-items: $alignitems;
+}
+
+main{
+@include main(900px, flex, row nowrap, space-around, center);
+         width:100%;
+}
+
+table{
+    margin: 100px auto;
+    width: 600px;
+    background-color:#fbe083;
+    text-align: left;
+    width:600px;
+    border-collapse: collapse;
+        tr{
+            td{
+                border: solid 1px black;
+                padding:20px;
+                font-family: 'Raleway', sans-serif;
+                color: rgb(92, 3, 3);
+            }
+        }
+    }
+
+tr td:hover{
+        transform: scale(1,1);   
+    }
+
+th{
+     background-color: tomato;
+     border-bottom: solid 5px #50232e ;
+     color: rgb(253, 252, 252);
+    font-family: 'Raleway', sans-serif; 
+    text-align: center;
+    }
